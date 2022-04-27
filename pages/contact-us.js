@@ -1,13 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import styles from "../styles/contact-us.module.css";
+import Navbar from "../components/Navbar";
+
 const contactUs = () => {
   return (
     <>
       <Head>
         <title>Contact Us</title>
       </Head>
-      <div className="jumbotron text-center contact_us_banner">
+      <Navbar />
+      <div className={"jumbotron text-center " + styles.contact_us_banner}>
         <h1>Contact Us</h1>
       </div>
       <div className="col">

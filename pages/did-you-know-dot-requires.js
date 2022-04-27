@@ -1,13 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import styles from "../styles/did-you-know-dot-requires.module.css";
+import Navbar from "../components/Navbar";
+
 const didYouKnowDotRequires = () => {
   return (
     <>
       <Head>
         <title>Did you know DOT requires...</title>
       </Head>
-      <div className="jumbotron text-center did_you_know_dot_requires_banner">
+      <Navbar />
+      <div className={"jumbotron text-center " + styles.did_you_know_dot_requires_banner}>
         <h1>Did you know DOT requires...</h1>
       </div>
       <div className="row">

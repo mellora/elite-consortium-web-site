@@ -1,13 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import styles from "../styles/who-needs-a-consortium.module.css";
+import Navbar from "../components/Navbar";
+
 const whoNeedsAConsortium = () => {
   return (
     <>
       <Head>
         <title>Who Needs a Drug Testing Consortium</title>
       </Head>
-      <div className="jumbotron text-center who_needs_a_consortium_banner">
+      <Navbar />
+      <div className={"jumbotron text-center "+ styles.who_needs_a_consortium_banner}>
         <h1>Who Needs a Drug Testing Consortium</h1>
       </div>
       <div className="row">

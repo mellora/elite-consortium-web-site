@@ -1,5 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
+
+import styles from "../styles/index.module.css"
+import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
@@ -7,7 +9,8 @@ const Home = () => {
       <Head>
         <title>Elite Consortium Services</title>
       </Head>
-      <div className="jumbotron text-center index_banner">
+      <Navbar />
+      <div className={"jumbotron text-center " + styles.index_banner}>
         <h1>Elite Consortium Services</h1>
       </div>
       <div className="row">

@@ -1,13 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import styles from "../styles/pricing.module.css";
+import Navbar from "../components/Navbar";
+
 const pricing = () => {
   return (
     <>
       <Head>
         <title>Pricing</title>
       </Head>
-      <div className="jumbotron text-center pricing_banner">
+      <Navbar />
+      <div className={"jumbotron text-center " + styles.pricing_banner}>
         <h1>Pricing</h1>
       </div>
       <div className="row">

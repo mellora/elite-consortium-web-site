@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import styles from "../styles/what-can-elite-do-for-you.module.css"
+import Navbar from "../components/Navbar";
+
 const whatCanEliteDoForYou = () => {
   return (
     <>
@@ -9,7 +12,8 @@ const whatCanEliteDoForYou = () => {
           What Elite can do in Your DOT Drug & Alcohol Testing Compliance?
         </title>
       </Head>
-      <div className="jumbotron text-center what_can_elite_do_for_you_banner">
+      <Navbar />
+      <div className={"jumbotron text-center " + styles.what_can_elite_do_for_you_banner}>
         <h1>
           What Elite can do in Your DOT Drug & Alcohol Testing Compliance?
         </h1>
